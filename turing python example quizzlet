@@ -1,0 +1,24 @@
+given a string containing just the charachters '(', ')', '{'. '}', '[', ']', determine if the input string is valid.
+
+An input string is valid if:
+	0. Open brackets must be closed by the same type of brackets.
+	0. Opn brackets must be closed in the correct order.
+
+	s consists of parentheses only
+	s.length <= 104
+
+
+-------------------------------------------------------------------------
+
+You are keeping score for a baseball game with strange rules. the game consists of several rounds, where the scores of past rounds may affect future rounds scores.
+
+At the begining of the game, you start with an empty record. you are given a list of strings ops, where op[i] is the ith operation you must apply to the record and is one of the following:
+
+	An integer x - Record a new score of x
+	"+" - record a new score that is the sum of the previous two scores. It is guranteed there will always be two previous scores.
+
+	"D" - record a new score that is double the previous score. It is guranteed there will always be a previous score.
+
+	"C" - Invalidate the previous score, removing it from the record. It is guranteed there will always be a previous score.
+
+	return the sum of all the scores on the record
